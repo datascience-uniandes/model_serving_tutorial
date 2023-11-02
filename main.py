@@ -13,7 +13,7 @@ app = FastAPI()
 
 @app.get("/")
 def read_root():
-   return { "message": "Hello world" }
+    return { "message": "Hello world" }
 
 @app.post("/predict")
 def make_predictions(X: List[DataModel]):
